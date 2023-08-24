@@ -1,0 +1,890 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: url(../img/fondo2.jpg);
+    background-position: center;
+}
+main{
+    display: flex;
+    justify-content: center;
+}
+
+/*NAVEGADOR*/
+
+.div-navegador{
+    display: flex;
+    align-items: center;
+}
+nav {
+    background-color: #498ccfd7; 
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+  }
+
+  .navbar-left {
+    display: flex;
+    align-items: center;
+  }
+
+  .navbar-right {
+    display: flex;
+    align-items: center;
+  }
+
+  .navbar img {
+    height: 120px;
+    width: auto;
+    margin-right: 40px;
+  }
+
+  .navbar-item {
+    font-family: Comic Sans MS;
+    font-weight: bold;
+    font-size: 25px;
+    color: yellow; 
+    margin-right: 20px;
+    cursor: pointer;
+    position: relative;
+  }
+
+  .navbar-user-score {
+    font-family: Comic Sans MS;
+    font-weight: bold;
+    font-size: 25px;
+    color: yellow; 
+    margin-right: 20px;
+    position: relative;
+  }
+
+  .navbar-item::before,
+  .navbar-item::after {
+    content: "";
+    position: absolute;
+    width: 100%; 
+    height: 2px;
+    background-color: yellow; 
+    transform: scaleX(0);
+    transition: transform 0.3s ease-in-out;
+  }
+
+  .navbar-item::before {
+    top: 100%; 
+    left: 0;
+  }
+
+  .navbar-item::after {
+    top: 100%; 
+    right: 0;
+  }
+
+  .navbar-item:hover::before,
+  .navbar-item:hover::after {
+    transform: scaleX(1);
+  }
+
+
+.navegador-li{
+    font-size: 20px;
+}
+.linkk{
+    text-decoration: none;
+    color: yellow;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*INDEX*/
+.div-index{
+    margin-top: 7rem;
+    display: flex;
+    flex-direction: column;
+}
+.title-index{
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+}
+.tuclase{
+text-align: left;
+font-family: Comic Sans MS;
+font-weight:bold;
+font-size: 50px;
+color: #e67e22;
+text-shadow: -1px 0 #414D68, 0 1px #414D68, 1px 0 #414D68, 0 -1px #414D68, -2px 2px 0 #414D68, 2px 2px 0 #414D68, 1px 1px #414D68, 2px 2px #414D68, 3px 3px #414D68, 4px 4px #414D68, 5px 5px #414D68, 5px 5px #414D68, 7px 7px #414D68, 8px 8px #414D68;
+}
+strong{
+color: rgb(112, 164, 241);
+}
+.imgs{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.boton{
+    display: flex;
+    justify-content: center;
+}
+.jugar-button {
+   
+    padding: 15px 50px;
+    font-size: 24px;
+    background-color: #f39c12;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease, transform 0.2s ease-in-out;
+    width: 10%;
+    }
+    .jugar-button a{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-decoration: none;
+        color: white;
+       
+    }
+    .jugar-button{
+        padding-inline: 10rem;
+
+    }
+    .index-button a{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-decoration: none;
+        color: white;
+    }
+    .index-button{
+       
+        margin-bottom: 2rem;
+        padding: 15px 50px;
+        font-size: 24px;
+        background-color: #f39c12;
+        color: #fff;
+        border: none;
+        border-radius: 10px;
+        cursor: pointer;
+        box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+        transition: background-color 0.3s ease, transform 0.2s ease-in-out;
+        width: 10%;
+        padding-inline: 10rem;
+        
+    }
+    
+    .jugar-button:hover {
+    background-color: #e67e22;
+    transform: scale(1.05);
+    }
+    .index-button:hover {
+        background-color: #e67e22;
+        transform: scale(1.05);
+        }
+    
+.jugar-button:focus {
+    outline: none;
+    }
+.index-button:focus {
+        outline: none;
+        }
+
+
+
+
+/*CONFIGURAR JUEGO*/
+.div-form{
+    display: flex;
+    justify-content: center;
+}
+.container-usuario {
+    background-color: rgba(88, 155, 182, 0.507);
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    padding-inline: 2rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    margin-top: 50px;
+}
+.usuario{
+    text-align: center;
+    font-family: Comic Sans MS;
+    font-weight:bold;
+    font-size: 20px;
+    color: #22e6e6;
+    text-shadow: -1px 0 #414D68, 0 1px #414D68, 1px 0 #414D68, 0 -1px #414D68, -2px 2px 0 #414D68, 2px 2px 0 #414D68, 1px 1px #414D68, 2px 2px #414D68, 3px 3px #414D68, 4px 4px #414D68, 5px 5px #414D68;
+}
+
+.carta{
+    width: 100%;
+    padding: 1rem;
+} 
+.img-txt{
+    display: flex;
+    flex-direction: row;
+    
+}
+
+.category-option {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 15px 0;
+    font-size: 24px;
+    color: #333;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.category-option:hover {
+    transform: scale(1.05);
+}
+
+.custom-radio {
+    position: relative;
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background-color: #fff;
+    border-radius: 50%;
+    border: 4px solid #000000;
+    margin-right: 15px;
+    transition: background-color 0.3s ease, border-color 0.3s ease, transform 0.3s ease;
+}
+label {
+        
+    margin-bottom: 5px;
+}
+
+input[type="text"], select {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.button2{
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  
+}
+.button-usuario {
+    padding: 12px 30px;
+    font-size: 20px;
+    background-color: #01a2ff;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease, transform 0.2s ease-in-out;
+    text-decoration: none;
+    padding-inline: 8rem;
+}
+
+.button-usuario:hover {
+background-color: #1c9e9e;
+transform: scale(1.05);
+}
+
+
+    
+    
+   
+    
+
+
+   
+        
+        
+        
+        .category-option:hover  .d {
+            border-color: orange;
+            }
+    
+            .category-option:hover  .a {
+                border-color: red;
+            }
+    
+            .category-option:hover  .h {
+                border-color: yellow;
+            }
+    
+            .category-option:hover  .c {
+                border-color: green;
+            }
+    
+            .category-option:hover  .g {
+                border-color: blue;
+            }
+    
+            .category-option:hover  .e {
+                border-color: palevioletred;
+            }
+            
+        
+        input[type="radio"]:checked + .custom-radio {
+            background-color: black;
+            transform: scale(0.8);
+        }
+        
+        input[type="radio"] {
+
+            position: absolute;
+            opacity: 0;
+            cursor: pointer;
+        }
+        
+
+
+
+.cards{
+    margin-top: 2rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr  ;
+    grid-gap: 40px;
+    
+}
+.carta-corona{
+   margin-left: 55%;
+}
+
+
+@media screen and (max-width:1615px) {
+    
+    .cards{
+        grid-template-columns: 1fr  ;
+        
+    }
+}
+
+
+
+
+.bajar-img{
+    margin-top: 1rem;
+}
+
+.img-txt p{
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+    font-size: 20px;
+    font-style: italic ;
+
+    text-align: left;
+    font-family: Comic Sans MS;
+    font-weight:bold;
+    font-size: 50px;
+    text-shadow: -1px 0 #414D68, 0 1px #414D68, 1px 0 #414D68, 0 -1px #414D68, -2px 2px 0 #414D68, 2px 2px 0 #414D68, 1px 1px #414D68, 2px 2px #414D68, 3px 3px #414D68, 4px 4px #414D68, 5px 5px #414D68, 5px 5px #414D68, 7px 7px #414D68, 8px 8px #414D68;
+}
+
+
+.arte{
+    color: red;
+}
+.art{
+    background-color: rgba(255, 0, 0, 0.507);
+}
+.Ciencia{
+    color: green;
+}
+.cien{
+    background-color: rgba(26, 121, 26, 0.479);
+    
+}
+.geografia{
+    color: blue;
+}
+.geo{
+    background-color: rgba(0, 0, 255, 0.507);
+}
+
+.bajar{
+    margin-top: 4rem;
+}
+.Deportes{
+    color: #e67e22;
+}
+.deport{
+    background-color: #e67d22b4;
+}
+.entretenimiento{
+    color: palevioletred;
+}
+.entre{
+    background-color: rgba(216, 112, 147, 0.637);
+}
+.bajar-entreten{
+    margin-top: 3rem;
+}
+.hitoria{
+    color: yellow;
+}
+.hist{
+    background-color: rgba(247, 247, 14, 0.445);
+}
+.todas{
+    background-color: rgba(252, 252, 0, 0.534);
+}
+.todasss{
+    color: yellow;
+}
+.imagen{
+    width: 50%;
+}
+/*JUGAR*/
+
+.main-jugar{
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    background-color: #f37100b6;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+.titulo-cat{
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+    font-size: 20px;
+    font-style: italic ;
+    justify-content: center;
+    text-align: left;
+    font-family: Comic Sans MS;
+    font-weight:bold;
+    font-size: 50px;
+    text-shadow: -1px 0 #414D68, 0 1px #414D68, 1px 0 #414D68, 0 -1px #414D68, -2px 2px 0 #414D68, 2px 2px 0 #414D68, 1px 1px #414D68, 2px 2px #414D68, 3px 3px #414D68, 4px 4px #414D68, 5px 5px #414D68, 5px 5px #414D68, 7px 7px #414D68, 8px 8px #414D68;
+}
+.padre-preguntas{
+    border-radius: 20px;
+    background-color: #f38d18d8;
+}
+.p-jugarr{
+    
+    padding: 1rem;
+    font-style: italic ;
+    justify-content: center;
+    text-align: left;
+    font-family: Comic Sans MS;
+    font-weight:bold;
+    font-size: 25px;
+    text-shadow: -1px 0 #414D68, 0 1px #414D68, 1px 0 #414D68, 0 -1px #414D68, -2px 2px 0 #414D68, 2px 2px 0 #414D68, 1px 1px #414D68, 2px 2px #414D68;
+}
+.div-pregunta{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding: 1rem;
+    font-size: 20px;
+    font-style: italic ;
+    justify-content: center;
+    font-family: Comic Sans MS;
+    font-weight:bold;
+   
+}
+.img-jugar{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 1rem;
+}
+.respuestas{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 30px;
+}
+
+.fono {
+    
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.fono p{
+    display: flex;
+    align-items: center;
+    margin: 0;
+}
+.co{
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+    font-size: 20px;
+    font-style: italic ;
+    justify-content: center;
+    text-align: left;
+    font-family: Comic Sans MS;
+    font-weight:bold;
+    font-size: 25px;
+
+}
+
+.boton-jugar{
+    display: flex;
+    justify-content: center;
+    margin: 2rem;
+}
+
+
+
+
+/*Respuesta correcta*/
+.body-correcta{
+    background-image: url(../img/gif.gif);
+}
+.contenedor-correcta{
+    display: flex;
+    flex-direction: column;
+}
+.padre-correcta{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    background-color: rgba(0, 255, 21, 0.222);
+    border-radius: 40px;
+    width: 30%;
+    margin-top: 10%;
+}
+.padre-correcta img{
+    max-width: 100%;
+    height: auto;
+}
+.parrafo-correcta{
+    
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 20px;
+    color: white;
+    
+}
+.strong-correcta{
+    color: rgb(150, 250, 0);
+}
+
+
+.correcta-button a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: white;
+   
+}
+.correcta-button{
+   
+    margin-bottom: 2rem;
+    background-color: #0ac419;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease, transform 0.2s ease-in-out;
+ 
+    padding-inline: 10rem;
+    padding: 1rem;
+    
+}
+
+.correcta-button:hover {
+background-color: #079e14;
+transform: scale(1.05);
+}
+
+.correcta-button:focus {
+outline: none;
+}
+
+
+
+
+
+/*incorrecta*/
+
+@import url('https://fonts.googleapis.com/css2?family=Special+Elite&display=swap');
+
+.body-incorrecto {
+  font-family: 'Special Elite', cursive;
+  background-image: url(../img/fire.gif); 
+    background-size: 150%;
+    background-repeat: no-repeat;
+    background-position: center;
+
+}
+
+.perdiste {
+  font-size: 30px;
+  letter-spacing: 4px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  color: #ff0000; 
+} 
+.padre-incorrecta{
+    display: flex;
+    justify-content: center;
+    margin-top: 10%;
+}
+  .incorrect-screen {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    background-color: rgba(128, 42, 36, 0.405);
+    border-radius: 40px;
+    width: 30%;
+    
+  }
+  
+  .incorrect-screen img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .incorrect-screen p {
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 20px;
+  }
+
+  .incorrect-button a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: white;
+   
+}
+.incorrect-button{
+   
+    margin-bottom: 2rem;
+    background-color: #ff0000;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease, transform 0.2s ease-in-out;
+    margin-top: 1rem;
+    padding-inline: 10rem;
+    padding: 1rem;
+    
+}
+
+.incorrect-button:hover {
+background-color: #be3333;
+transform: scale(1.05);
+}
+
+.incorrect-button:focus {
+outline: none;
+}
+.parrafo-incorrecta{
+    text-align: center;
+    font-family: Comic Sans MS;
+    font-weight:bold;
+    font-size: 30px;
+    color: #ffffff;
+    text-shadow: -1px 0 #414D68, 0 1px #414D68, 1px 0 #414D68, 0 -1px #414D68, -2px 2px 0 #414D68, 2px 2px 0 #414D68, 1px 1px #414D68, 2px 2px #414D68, 3px 3px #414D68;
+}
+.strong-incorrecta{
+    color: red;
+}
+
+/*Jugar 2*/
+.main-jugar2{
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(0, 128, 0, 0.551);
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+.titulo-cat-Juego2{
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+    font-size: 20px;
+    font-style: italic ;
+    justify-content: center;
+    text-align: left;
+    font-family: Comic Sans MS;
+    font-weight:bold;
+    font-size: 50px;
+    text-shadow: -1px 0 #414D68, 0 1px #414D68, 1px 0 #414D68, 0 -1px #414D68, -2px 2px 0 #414D68, 2px 2px 0 #414D68, 1px 1px #414D68, 2px 2px #414D68, 3px 3px #414D68, 4px 4px #414D68, 5px 5px #414D68, 5px 5px #414D68, 7px 7px #414D68, 8px 8px #414D68;
+}
+.padre-preguntas-juego2{
+    border-radius: 20px;
+    background-color: rgba(0, 128, 0, 0.682);
+}
+.boton-jugar2{
+    display: flex;
+    justify-content: center;
+    margin: 2rem;
+}
+
+
+.jugar2-button {
+   
+    padding: 15px 50px;
+    font-size: 24px;
+    background-color: green;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease, transform 0.2s ease-in-out;
+    width: 10%;
+    }
+    .jugar2-button a{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-decoration: none;
+        color: white;
+       
+    }
+    .jugar2-button{
+        padding-inline: 10rem;
+
+    }
+  
+    
+    
+    .jugar2-button:hover {
+    background-color: rgb(18, 151, 18);
+    transform: scale(1.05);
+    }
+   
+    
+.jugar2-button:focus {
+    outline: none;
+}
+
+/*FIN*/
+
+.contenedorr{
+    display: flex;
+    flex-direction: column;
+
+}
+
+.title-fin{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 3rem;
+}
+.padre-fin{
+    display: flex;
+    flex-direction: column;
+    margin-top: 2rem;
+}
+
+.cont-fin {
+   
+    text-align: center;
+    background-color: rgba(88, 155, 182, 0.507);
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    padding-inline: 2rem;
+  
+    padding-bottom: 2rem;
+   
+}
+.carta-fin{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 2rem;
+    
+}
+.strong-fin{
+    color: yellow;
+}
+.strong2{
+    color: pink;
+}
+.p-fin{
+    
+    font-family: Comic Sans MS;
+    font-weight:bold;
+    font-size: 30px;
+    color: rgb(212, 71, 71);
+    text-shadow: -1px 0 #414D68, 0 1px #414D68, 1px 0 #414D68, 0 -1px #414D68, -2px 2px 0 #414D68, 2px 2px 0 #414D68, 1px 1px #414D68, 2px 2px #414D68;
+}
+.gif-fin{
+    margin-bottom: 2rem;
+}
+.p-finn{
+    font-weight: bold;
+}
+.boton-fin{
+    display: flex;
+    justify-content: center;
+}
+.button-fin{
+    margin-bottom: 2rem;
+    background-color: #025fff;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease, transform 0.2s ease-in-out;
+    margin-top: 2rem;
+    padding-inline: 10rem;
+    padding: 1rem;
+}
+.button-fin a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: white;
+   
+}
+
+
+
+.button-fin:hover {
+    background-color: #2f07f5;
+    transform: scale(1.05);
+}
+
+.button-fin:focus {
+    outline: none;
+}
