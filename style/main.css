@@ -246,7 +246,7 @@ color: rgb(112, 164, 241);
 .img-txt{
     display: flex;
     flex-direction: row;
-    
+    justify-content: center;
 }
 
 .category-option {
